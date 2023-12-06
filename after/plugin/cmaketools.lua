@@ -5,14 +5,14 @@ cmake_tools.setup {
     cmake_build_directory = "build/${variant:buildType}",
 
 
-      cmake_dap_configuration = { -- debug settings for cmake
-    name = "cpp",
-    type = "codelldb",
-    request = "launch",
-    stopOnEntry = false,
-    runInTerminal = true,
-    console = "integratedTerminal",
-  },
+    cmake_dap_configuration = { -- debug settings for cmake
+        name = "cpp",
+        type = "codelldb",
+        request = "launch",
+        stoponentry = false,
+        runinterminal = true,
+        console = "integratedTerminal",
+    },
 
     cmake_terminal = {
         name = "terminal",

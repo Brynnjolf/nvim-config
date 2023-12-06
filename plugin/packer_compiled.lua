@@ -90,10 +90,15 @@ _G.packer_plugins = {
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
   gruvbox = {
-    config = { "\27LJ\2\2Y\0\0\2\0\6\0\t6\0\0\0009\0\1\0'\1\3\0=\1\2\0006\0\0\0009\0\4\0'\1\5\0B\0\2\1K\0\1\0\24colorscheme gruvbox\bcmd\tdark\15background\6o\bvim\0" },
+    config = { "\27LJ\2\2½\1\0\0\4\0\14\0\0196\0\0\0009\0\1\0'\1\3\0=\1\2\0006\0\4\0'\1\5\0B\0\2\0029\0\6\0005\1\n\0005\2\b\0005\3\a\0=\3\t\2=\2\v\1B\0\2\0016\0\0\0009\0\f\0'\1\r\0B\0\2\1K\0\1\0\24colorscheme gruvbox\bcmd\14overrides\1\0\0\fdebugPC\1\0\0\1\0\1\abg\f#076678\nsetup\fgruvbox\frequire\tdark\15background\6o\bvim\0" },
     loaded = true,
     path = "/home/brynn/.local/share/nvim/site/pack/packer/start/gruvbox",
     url = "https://github.com/ellisonleao/gruvbox.nvim"
+  },
+  harpoon = {
+    loaded = true,
+    path = "/home/brynn/.local/share/nvim/site/pack/packer/start/harpoon",
+    url = "https://github.com/ThePrimeagen/harpoon"
   },
   ["lsp-zero.nvim"] = {
     loaded = true,
@@ -167,6 +172,11 @@ _G.packer_plugins = {
     path = "/home/brynn/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
+  ["nvim-treesitter-context"] = {
+    loaded = true,
+    path = "/home/brynn/.local/share/nvim/site/pack/packer/start/nvim-treesitter-context",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter-context"
+  },
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/home/brynn/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
@@ -192,6 +202,11 @@ _G.packer_plugins = {
     path = "/home/brynn/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  undotree = {
+    loaded = true,
+    path = "/home/brynn/.local/share/nvim/site/pack/packer/start/undotree",
+    url = "https://github.com/mbbill/undotree"
+  },
   ["vim-be-good"] = {
     loaded = true,
     path = "/home/brynn/.local/share/nvim/site/pack/packer/start/vim-be-good",
@@ -215,7 +230,7 @@ try_loadstring("\27LJ\2\2@\0\0\2\0\3\0\a6\0\0\0'\1\1\0B\0\2\0029\0\2\0004\1\0\0B
 time([[Config for nvim-autopairs]], false)
 -- Config for: gruvbox
 time([[Config for gruvbox]], true)
-try_loadstring("\27LJ\2\2Y\0\0\2\0\6\0\t6\0\0\0009\0\1\0'\1\3\0=\1\2\0006\0\0\0009\0\4\0'\1\5\0B\0\2\1K\0\1\0\24colorscheme gruvbox\bcmd\tdark\15background\6o\bvim\0", "config", "gruvbox")
+try_loadstring("\27LJ\2\2½\1\0\0\4\0\14\0\0196\0\0\0009\0\1\0'\1\3\0=\1\2\0006\0\4\0'\1\5\0B\0\2\0029\0\6\0005\1\n\0005\2\b\0005\3\a\0=\3\t\2=\2\v\1B\0\2\0016\0\0\0009\0\f\0'\1\r\0B\0\2\1K\0\1\0\24colorscheme gruvbox\bcmd\14overrides\1\0\0\fdebugPC\1\0\0\1\0\1\abg\f#076678\nsetup\fgruvbox\frequire\tdark\15background\6o\bvim\0", "config", "gruvbox")
 time([[Config for gruvbox]], false)
 
 _G._packer.inside_compile = false

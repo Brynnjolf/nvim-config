@@ -23,11 +23,17 @@ return require('packer').startup(function(use)
         end
     })
 
-    use ( { 
+    use ( {
         "ellisonleao/gruvbox.nvim"  ,
         as = "gruvbox",
         config = function()
             vim.o.background = "dark"
+            require("gruvbox").setup({
+                overrides = {
+                    debugPC = { bg = "#076678" }
+                }
+            })
+
             vim.cmd("colorscheme gruvbox")
         end
     })
@@ -35,7 +41,10 @@ return require('packer').startup(function(use)
     use "nvim-tree/nvim-tree.lua"
     use 'nvim-tree/nvim-web-devicons'
 
+    use 'mbbill/undotree'
+
     use ( 'nvim-treesitter/nvim-treesitter', { run = ':TSUpdate'} )
+    use "nvim-treesitter/nvim-treesitter-context"
     use ('nvim-treesitter/playground')
     use {
         'VonHeikemen/lsp-zero.nvim',
@@ -67,4 +76,5 @@ return require('packer').startup(function(use)
     use 'folke/neodev.nvim'
     use 'ThePrimeagen/vim-be-good'
     use 'preservim/nerdcommenter'
+    use 'ThePrimeagen/harpoon'
 end)
